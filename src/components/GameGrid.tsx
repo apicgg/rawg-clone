@@ -1,5 +1,5 @@
 import { Text } from "@chakra-ui/react";
-import { AxiosError } from "axios";
+import { isAxiosError } from "axios";
 import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 
@@ -23,8 +23,9 @@ const GameGrid = () => {
         const response = await apiClient.get<FetchGameResponse>("/games");
         setGames(response.data.results);
       } catch (error) {
-        const err = error as AxiosError;
-        setError(err.message);
+        if (isAxiosError(error)) {
+          setError(error.message);
+        }
       }
     };
 
