@@ -1,6 +1,6 @@
 # RAWG-CLONE
 
-RAWG-CLONE is a video game discovery web app that helps you find new and interesting games to play. With GameHub, you can search for games by platform, genre, and more.
+RAWG-CLONE is a video game discovery web app that helps you find new and interesting games to play. With RAWG-CLONE, you can search for games by platform, genre, and more.
 
 You can find the full course at: https://codewithmosh.com
 
