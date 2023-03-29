@@ -3,6 +3,7 @@ import { useState } from "react";
 import GameGrid from "./components/GameCard/GameGrid";
 import GenreList from "./components/Genre/GenreList";
 import NavBar from "./components/Navbar/NavBar";
+import PlatformSelector from "./components/Platform/PlatformSelector";
 import { Genre } from "./hooks/useGenres";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         </GridItem>
       </Show>
       <GridItem area="main">
+        <PlatformSelector />
         <GameGrid selectedGenre={selectedGenre} />
       </GridItem>
     </Grid>
