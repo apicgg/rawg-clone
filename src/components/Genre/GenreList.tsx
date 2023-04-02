@@ -34,9 +34,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
               variant="link"
               fontSize="lg"
               onClick={() => onSelectGenre(genre)}
-              fontWeight={
-                genre.id === selectedGenre?.id ? "extrabold" : "normal"
-              }
+              fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
             >
               {genre.name}
             </Button>
