@@ -5,4 +5,5 @@ export default axios.create({
   params: {
     key: import.meta.env.VITE_API_KEY,
   },
+  withCredentials: false,
 });
